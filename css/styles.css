@@ -1,0 +1,234 @@
+body{
+        background-color: #F5F7FA;
+        font-family: 'Montserrat','Arial';
+}
+
+li {
+    /*etiqueta para colocar espacio entre cada elemento de la lista*/
+    line-height: 24px;
+}
+
+/*---------------------*/
+/*Contenido principal*/
+/*---------------------*/
+
+.contenedor-principal{
+    /*Alterar el comportamiento del contenido, ya que este se organiza por bloques((uno debajo del otro) pero lo podemos
+    organizar por columnas con display flex para que el contenedor sea flexible
+    display: flex;
+    /*organiza el contenido en una sola fila por columnas
+    flex-direction: row;
+    }*/
+    display: flex;
+    flex-direction: row-reverse; /*invierte el orden de las columnas*/
+    background-color: white;
+    width: 1200px;
+    /*Margen entre el body y nuestro contenedor principal- margen de 40px arriba y abajo y se coloca la palabra
+    auto para que se ajuste automaticamente los margenes de la izquierda y derecha(centrados).. el margin genera un espacio
+    entre contenedores*/
+    margin: 40px auto;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+    
+}
+/*---------------------*/
+/*Información general*/
+/*---------------------*/
+
+
+.informacion-general {
+    padding: 100px 88px ;
+    
+}
+/*---------------------*/
+/*Descripcion*/
+.nombre {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.texto-descripcion{
+
+    font-style: normal;
+    width: 700px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    
+}
+
+.descripcion-profesion{
+    font-size: 20px;
+    /*peso de la fuente.mayor numero mas negrita la letra*/
+    font-weight: 700;
+}
+
+/*---------------------*/
+/*Secciones principales*/
+/*---------------------*/
+
+.titulo-seccion-principal{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    margin-top: 45px;
+}
+
+.texto-naranja{
+    color: #FB6D3A;
+}
+
+.periodo-experiencia{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #A8A8A8;
+}
+/*Secciones proyectos*/
+.lista-proyectos{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 17px;
+}
+
+.enlace-proyectos {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #595959;
+    text-shadow: 0px 4px 4px rgb(192, 183, 183);
+}
+
+.puntos-proyectos{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #595959;
+}
+
+/*Sección experiencia laboral*/
+
+.puesto-empresa{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    margin-top: 15px;
+    margin-bottom: 11px;
+}
+
+.lista-experiencia{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 17px;
+}
+
+/*Sección educación*/
+
+.centro-educativo{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.titulo-educacion{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin: 8px 0;
+}
+/*---------------------*/
+/*Información lateral*/
+/*---------------------*/
+
+.informacion-lateral{
+    background-color: #1E2939;
+    /*Genera un espacio dentro del mismo contenedor, el primer valor (40px) lo aplica arriba y abajo, colocar un 0 como segundo valor
+    para que no genere ese espacio en la izquierda y derecha*/
+    padding: 40px 0;
+}
+
+.titulo-lateral{
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    margin-top: 50px;
+    margin-bottom: 8px;
+}
+/*Los estilos se aplican a las tres clases*/
+.contactos, .habilidades-tecnicas, .habilidades-blandas{
+    margin-left: 40px;
+}
+
+/*---------------------*/
+/*Sección contactos*/
+/*---------------------*/
+
+.tipo-contacto{
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    margin-right: 5px;
+}
+
+.contacto-info{
+    color: grey;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/*---------------------*/
+/* Seccion de lista */
+/*---------------------*/
+
+.lista-lateral{
+    /*Quita los espacios adicionales dentro de la lista (contenedor lista)
+    padding: 0;*/
+    padding-left: 18px;
+}
+/*los estilos se aplicaran a todos los li de la clase lista-lateral de la lista ul*/
+.lista-lateral > li {
+    color: #FB6D3A;
+
+}
+.elemento-lista-lateral{
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+    /*Margen abajo
+    margin-bottom: 40px;
+    /*Margen arriba
+    margin-top: 40px;
+    /*Margen derecho
+    margin-right: 40px;
+    /*Margen izquierdo
+    margin-left: 40px;
+    /*la etiqueta margin aplicará el mismo margen a los 4 bordes del contenedor*/
+    /*margin: 40px;*/
+
